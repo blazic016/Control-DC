@@ -1,0 +1,510 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"5 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X/lcd.h
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"27
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"36
+[v _Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+"42
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"63
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"82
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"98
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"3 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X/pwm.h
+[v _PWM1_Init PWM1_Init `(i  1 e 2 0 ]
+"9
+[v _PWM_Max_Duty PWM_Max_Duty `(i  1 e 2 0 ]
+"15
+[v _PWM2_Init PWM2_Init `(i  1 e 2 0 ]
+"21
+[v _PWM1_Duty PWM1_Duty `(i  1 e 2 0 ]
+"32
+[v _PWM2_Duty PWM2_Duty `(i  1 e 2 0 ]
+"43
+[v _PWM1_Start PWM1_Start `(i  1 e 2 0 ]
+"67
+[v _PWM2_Start PWM2_Start `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"500 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"32 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X\main.c
+[v _DC_Napred DC_Napred `(i  1 e 2 0 ]
+"42
+[v _PWM1_procenat PWM1_procenat `(i  1 e 2 0 ]
+"71
+[v _my_isr_routine my_isr_routine `II(v  1 e 1 0 ]
+"91
+[v _main main `(v  1 e 1 0 ]
+"1 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X/pwm.h
+[v _freq freq `l  1 e 4 0 ]
+[s S50 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f877a.h
+[u S59 . 1 `S50 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES59  1 e 1 @6 ]
+[s S77 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S91 . 1 `S77 1 . 1 0 `S86 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES91  1 e 1 @11 ]
+"892
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"1080
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+[s S111 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1275
+[s S118 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S122 . 1 `S111 1 . 1 0 `S118 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES122  1 e 1 @129 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2446
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"2449
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"2452
+[v _CCP1X CCP1X `VEb  1 e 0 @189 ]
+"2455
+[v _CCP1Y CCP1Y `VEb  1 e 0 @188 ]
+"2470
+[v _CCP2M2 CCP2M2 `VEb  1 e 0 @234 ]
+"2473
+[v _CCP2M3 CCP2M3 `VEb  1 e 0 @235 ]
+"2476
+[v _CCP2X CCP2X `VEb  1 e 0 @237 ]
+"2479
+[v _CCP2Y CCP2Y `VEb  1 e 0 @236 ]
+"2716
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"2719
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2767
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2872
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"2875
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2938
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"2941
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1074 ]
+"2962
+[v _TRISC1 TRISC1 `VEb  1 e 0 @1081 ]
+"2965
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"2974
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"2983
+[v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
+"2986
+[v _TRISD1 TRISD1 `VEb  1 e 0 @1089 ]
+"2989
+[v _TRISD2 TRISD2 `VEb  1 e 0 @1090 ]
+"2992
+[v _TRISD3 TRISD3 `VEb  1 e 0 @1091 ]
+"2995
+[v _TRISD4 TRISD4 `VEb  1 e 0 @1092 ]
+"2998
+[v _TRISD5 TRISD5 `VEb  1 e 0 @1093 ]
+"3001
+[v _TRISD6 TRISD6 `VEb  1 e 0 @1094 ]
+"3004
+[v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
+"358 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"69 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X\main.c
+[v _count count `i  1 e 2 0 ]
+"70
+[v _sekunda sekunda `i  1 e 2 0 ]
+"91
+[v _main main `(v  1 e 1 0 ]
+{
+"163
+[v main@druga druga `[20]uc  1 a 20 22 ]
+"162
+[v main@prva prva `[20]uc  1 a 20 2 ]
+"170
+[v main@procenat procenat `i  1 a 2 58 ]
+"171
+[v main@rpm_zadato rpm_zadato `i  1 a 2 56 ]
+"161
+[v main@rpm rpm `i  1 a 2 54 ]
+"157
+[v main@flag2 flag2 `i  1 a 2 52 ]
+"156
+[v main@flag1 flag1 `i  1 a 2 50 ]
+"160
+[v main@cnt cnt `i  1 a 2 48 ]
+"158
+[v main@flag3 flag3 `i  1 a 2 46 ]
+"167
+[v main@mod_2 mod_2 `i  1 a 2 44 ]
+"166
+[v main@mod_1 mod_1 `i  1 a 2 42 ]
+"159
+[v main@flag4 flag4 `i  1 a 2 0 ]
+"314
+} 0
+"500 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"540
+[v sprintf@val val `ui  1 a 2 19 ]
+"507
+[v sprintf@c c `uc  1 a 1 21 ]
+"516
+[v sprintf@prec prec `c  1 a 1 18 ]
+"520
+[v sprintf@flag flag `uc  1 a 1 17 ]
+"502
+[v sprintf@ap ap `[1]*.4v  1 a 1 16 ]
+"500
+[v sprintf@sp sp `*.39uc  1 p 2 6 ]
+[v sprintf@f f `*.24DCuc  1 p 1 8 ]
+"1560
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 7 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 9 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+"30
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"67 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X/pwm.h
+[v _PWM2_Start PWM2_Start `(i  1 e 2 0 ]
+{
+"83
+} 0
+"15
+[v _PWM2_Init PWM2_Init `(i  1 e 2 0 ]
+{
+[v PWM2_Init@fre fre `l  1 p 4 7 ]
+"19
+} 0
+"32
+[v _PWM2_Duty PWM2_Duty `(i  1 e 2 0 ]
+{
+[v PWM2_Duty@duty duty `ui  1 p 2 11 ]
+"41
+} 0
+"42 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X\main.c
+[v _PWM1_procenat PWM1_procenat `(i  1 e 2 0 ]
+{
+"48
+[v PWM1_procenat@procenat procenat `f  1 a 4 21 ]
+"47
+[v PWM1_procenat@koef koef `f  1 a 4 17 ]
+"42
+[v PWM1_procenat@i i `i  1 p 2 15 ]
+"56
+} 0
+"21 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X/pwm.h
+[v _PWM1_Duty PWM1_Duty `(i  1 e 2 0 ]
+{
+[v PWM1_Duty@duty duty `ui  1 p 2 11 ]
+"30
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 23 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 22 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 13 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 21 ]
+"44
+} 0
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 10 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 9 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S567 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S572 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S575 . 4 `l 1 i 4 0 `d 1 f 4 0 `S567 1 fAsBytes 4 0 `S572 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S575  1 a 4 73 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 68 ]
+[s S644 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S647 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S644 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S647  1 a 2 77 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 72 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 67 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 66 ]
+"8
+[v ___flmul@b b `d  1 p 4 53 ]
+[v ___flmul@a a `d  1 p 4 57 ]
+"205
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 2 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 0 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 2 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 4 ]
+"60
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 47 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 40 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 45 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 52 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 51 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 44 ]
+"8
+[v ___fldiv@a a `d  1 p 4 27 ]
+[v ___fldiv@b b `d  1 p 4 31 ]
+"185
+} 0
+"9 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X/pwm.h
+[v _PWM_Max_Duty PWM_Max_Duty `(i  1 e 2 0 ]
+{
+"12
+} 0
+"43
+[v _PWM1_Start PWM1_Start `(i  1 e 2 0 ]
+{
+"59
+} 0
+"3
+[v _PWM1_Init PWM1_Init `(i  1 e 2 0 ]
+{
+[v PWM1_Init@fre fre `l  1 p 4 7 ]
+"7
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 3 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 2 ]
+[v ___aldiv@counter counter `uc  1 a 1 1 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 2 ]
+[v ___aldiv@dividend dividend `l  1 p 4 6 ]
+"41
+} 0
+"98 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X/lcd.h
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+"100
+[v Lcd_Write_String@i i `i  1 a 2 3 ]
+"98
+[v Lcd_Write_String@a a `*.39uc  1 p 2 7 ]
+"103
+} 0
+"82
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"84
+[v Lcd_Write_Char@y y `uc  1 a 1 5 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 4 ]
+"82
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"85
+[v Lcd_Write_Char@a a `uc  1 a 1 6 ]
+"96
+} 0
+"42
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"44
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 3 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 2 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 1 ]
+"42
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 6 ]
+"45
+[v Lcd_Set_Cursor@a a `uc  1 a 1 0 ]
+"61
+} 0
+"63
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"80
+} 0
+"36
+[v _Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+{
+"40
+} 0
+"27
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"29
+[v Lcd_Cmd@a a `uc  1 a 1 5 ]
+"34
+} 0
+"5
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+"7
+[v Lcd_Port@a a `uc  1 a 1 2 ]
+"26
+} 0
+"32 E:\MC Projects\#PROJEKTI_KOJI_RADE\7. DC Motor PWM LCD - Copy\DC motor PWM LCD.X\main.c
+[v _DC_Napred DC_Napred `(i  1 e 2 0 ]
+{
+"35
+} 0
+"71
+[v _my_isr_routine my_isr_routine `II(v  1 e 1 0 ]
+{
+"84
+} 0
