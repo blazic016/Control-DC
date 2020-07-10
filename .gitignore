@@ -1,4 +1,14 @@
+#directories
+Altium//History/*
+Altium/__Previews/*
+old/*
+
+
+#files
 *.LOG
 *.log
-/History/*
+*.Zip
+*.zip
+*.User.workspace
+readme_for_me.txt
 

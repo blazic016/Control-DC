@@ -3,10 +3,10 @@ Microchip MPLAB XC8 Compiler V2.00 ()
 Linker command line:
 
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.00\pic\dat\en_msgs.txt \
-  -cs -h+dist/default/production\DC_motor_PWM_LCD.X.production.sym \
-  --cmf=dist/default/production\DC_motor_PWM_LCD.X.production.cmf -z \
-  -Q16F877A -oC:\Users\User\AppData\Local\Temp\scc.2 \
-  -Mdist/default/production/DC_motor_PWM_LCD.X.production.map -E1 -ver=XC8 \
+  -cs -h+dist/default/production\rpm_mplab.X.production.sym \
+  --cmf=dist/default/production\rpm_mplab.X.production.cmf -z -Q16F877A \
+  -oC:\Users\User\AppData\Local\Temp\s11ts.2 \
+  -Mdist/default/production/rpm_mplab.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=0110h-016fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
   -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
@@ -18,8 +18,8 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\User\AppData\Local\Temp\scc.o \
-  dist/default/production\DC_motor_PWM_LCD.X.production.o 
+  -DENTRY=2 -k C:\Users\User\AppData\Local\Temp\s11ts.o \
+  dist/default/production\rpm_mplab.X.production.o 
 
 Object code version is 3.11
 
@@ -28,11 +28,11 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\User\AppData\Local\Temp\scc.o
+C:\Users\User\AppData\Local\Temp\s11ts.o
                 end_init                              C        C        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        1     400E       0
-dist/default/production\DC_motor_PWM_LCD.X.production.o
+dist/default/production\rpm_mplab.X.production.o
                 cinit                                 F        F        A        8       0
                 intentry                              4        4        8        8       0
                 text28                             15EA     15EA       29     2BD4       0

@@ -3,8 +3,8 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>DC motor PWM LCD</name>
-            <creation-uuid>fdd41b49-0ed8-476a-b76e-4d96a5c5c6f1</creation-uuid>
+            <name>rpm_mplab</name>
+            <creation-uuid>d6cb5d0d-68be-4ce0-85a3-0c0706f7aa65</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
             <cpp-extensions/>

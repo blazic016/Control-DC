@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V2.00 build -1524193055 
-                                                                                               Mon Jul 01 11:27:34 2019
+                                                                                               Wed Jul 08 02:09:31 2020
 
 Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 20180527130849
      1  0000                     
@@ -650,7 +650,7 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
    587                           __CFG_WRT$OFF equ 0x0
    588  0000                     global __CFG_CP$OFF
    589                           __CFG_CP$OFF equ 0x0
-   590  0000                     	file	"C:\Users\User\AppData\Local\Temp\scc."
+   590  0000                     	file	"C:\Users\User\AppData\Local\Temp\s11ts."
    591                           	line	#
    592                           psect cinit,class=CODE,delta=2
    593                           global start_initialization
@@ -670,7 +670,7 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
    607  01CC                     _sekunda:
    608  01CC                            ds      2
    609  01CC                     
-   610                           	file	"C:\Users\User\AppData\Local\Temp\scc."
+   610                           	file	"C:\Users\User\AppData\Local\Temp\s11ts."
    611                           	line	#
    612                           ; Clear objects allocated to COMMON
    613                           psect cinit,class=CODE,delta=2,merge=1
@@ -10840,7 +10840,7 @@ DATA                 0      0      B9      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.00 build -1524193055 
-Symbol Table                                                                                   Mon Jul 01 11:27:34 2019
+Symbol Table                                                                                   Wed Jul 08 02:09:31 2020
 
              ___fldiv@aexp 0054            ??_PWM1_procenat 007A               ___fldiv@bexp 0053  
                         pc 0002               ___fldiv@sign 004C                __CFG_CP$OFF 0000  

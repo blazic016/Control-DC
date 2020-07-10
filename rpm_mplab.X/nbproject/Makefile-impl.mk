@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=DC motor PWM LCD.X
+PROJECTNAME=rpm_mplab.X
 
 # Active Configuration
 DEFAULTCONF=default
