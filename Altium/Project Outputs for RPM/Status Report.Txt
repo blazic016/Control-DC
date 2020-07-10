@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [RPM.PrjPCB]
+   Generated File[rpm.TXT]
+   Generated File[rpm.LDP]
+   Generated File[rpm.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:19:49 AM On 7/11/2020
